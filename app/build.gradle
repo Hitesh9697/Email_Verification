@@ -37,4 +37,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "com.github.parse-community.Parse-SDK-Android:parse:1.26.0"
+    implementation 'com.google.android.gms:play-services:12.0.1'
+
+}
+
+repositories {
+    google()
+    jcenter()
+    maven { url "https://jitpack.io"}
 }

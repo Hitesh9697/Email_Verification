@@ -2,26 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.emailverification">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EmailVerification">
+        android:theme="@style/Theme.EmailVerification"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LoginActivity"></activity>
 
         <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
             android:name="com.parse.SERVER_URL"
-            android:value="@string/server_url"/>
+            android:value="https://parseapi.back4app.com/" />
         <meta-data
             android:name="com.parse.APPLICATION_ID"
-            android:value="@string/application_ID"/>
+            android:value="0cDGa5Bd7zmnnSWINTtyQcQOS7YRxi0TT7SOCZHU" />
         <meta-data
             android:name="com.parse.CLIENT_KEY"
-            android:value="@string/client_key"/>
+            android:value="OEwMQnTxxF6IQyESpRNqTE66z4WPswpNAbT6KqWf" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
